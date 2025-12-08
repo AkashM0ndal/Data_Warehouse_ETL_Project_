@@ -77,12 +77,12 @@ Cleaned, standardized, relational-modeled layer.
 
 ## **Characteristics:**
 
-Deduplication
+- Deduplication
 
-Fix NULLs & data types
+- Fix NULLs & data types
 
-Referential integrity
+- Referential integrity
 
-Uniform date/time formats
+- Uniform date/time formats
 
 
