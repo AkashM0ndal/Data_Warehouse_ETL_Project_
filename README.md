@@ -85,4 +85,118 @@ Cleaned, standardized, relational-modeled layer.
 
 - Uniform date/time formats
 
+## **🥇 Gold Schema (gold)**
+
+Analytics-ready tables for BI and reporting.
+
+# Examples:
+
+- **`gold.fact_sales`**
+
+- **`gold.fact_revenue_daily`**
+
+- **`gold.dim_customer`**
+
+- **`gold.dim_product`**
+
+- **`gold.dim_store**
+
+## Characteristics:
+
+- Fact/dimension modeling
+
+- Denormalized for performance
+
+- Optimized for dashboard queries
+
+
+## **⚙️ ETL Logic (Stored Procedures + CTEs)**
+
+This project uses Stored Procedures to orchestrate ETL and CTEs to prepare consistent transformations.
+
+## Example Transformation Procedure
+####
+CREATE OR ALTER PROCEDURE silver.sp_transform_orders
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    WITH cleaned_orders AS (
+        SELECT
+            CAST(order_id AS INT) AS order_id,
+            CAST(customer_id AS INT) AS customer_id,
+            CAST(order_date AS DATE) AS order_date,
+            CAST(product_id AS INT) AS product_id,
+            CAST(quantity AS INT) AS quantity,
+            CAST(total_amount AS DECIMAL(18,2)) AS total_amount,
+            load_ts
+        FROM bronze.orders_raw
+        WHERE order_id IS NOT NULL
+    ),
+    deduped_orders AS (
+        SELECT *,
+            ROW_NUMBER() OVER (PARTITION BY order_id ORDER BY load_ts DESC) AS rn
+        FROM cleaned_orders
+    )
+
+    INSERT INTO silver.orders (order_id, customer_id, order_date, product_id, quantity, total_amount, load_ts)
+    SELECT order_id, customer_id, order_date, product_id, quantity, total_amount, load_ts
+    FROM deduped_orders
+    WHERE rn = 1
+END;
+GO
+
+## 📁 Recommended Repository Structure
+
+├── README.md
+├── /sql
+│   ├── 01_schemas.sql
+│   ├── 02_bronze_tables.sql
+│   ├── 03_silver_tables.sql
+│   ├── 04_gold_tables.sql
+│   ├── 05_stored_procedures.sql
+│   ├── 06_views.sql
+│   └── 07_seed_data.sql
+└── /docs
+    └── data_dictionary.md
+
+
+## **🔄 ETL Workflow**
+## 1️⃣ Create Schemas
+####
+- CREATE SCHEMA bronze;
+- CREATE SCHEMA silver;
+- CREATE SCHEMA gold;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
