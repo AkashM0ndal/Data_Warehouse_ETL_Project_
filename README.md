@@ -215,29 +215,25 @@ Contributions are welcome!
 
 - **1.** Fork this repo
 
-- 2.Create a feature branch
+- **2.** Create a feature branch
 
-Commit your changes
+- **3.** Commit your changes
 
-Submit a Pull Request
+- **4.** Submit a Pull Request
 
-📄 License
+## **📄 License**
 
-This project is licensed under the MIT License.
 
-✨ Final Notes
+
+## **✨ Final Notes**
 
 This ETL pipeline is built to demonstrate clean SQL engineering practices, and showcases:
 
-Multi-layer ETL architecture
+- Multi-layer ETL architecture
 
-Readable & maintainable SQL transformations
+- Readable & maintainable SQL transformations
 
-Professional project structure
-
-Feel free to customize table names, diagrams, scripts, and folder structure to match your dataset or use case.
-
-
+- Professional project structure
 
 
 
