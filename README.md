@@ -191,7 +191,7 @@ JOIN gold.dim_product dp ON fs.product_key = dp.product_key;
 
 ## **🧰 Technology Stack**
 
-- SQL Server / PostgreSQL / Azure SQL / Snowflake
+- SQL Server
 
 - Stored Procedures
 
@@ -204,6 +204,8 @@ JOIN gold.dim_product dp ON fs.product_key = dp.product_key;
 - Efficient transformations for 60,000+ records
 
 - Indexed keys for optimized joins
+
+- Use variables for more profesional and optimized dataset
 
 - Layered architecture ensures reusability and low maintenance
 
@@ -223,7 +225,10 @@ Contributions are welcome!
 
 ## **📄 License**
 
+- No license is granted for this project.
 
+- All rights to the source code and data are reserved by the author. 
+You may view the contents of this repository, but you may not reuse, copy, modify, or distribute the code or data without explicit permission.
 
 ## **✨ Final Notes**
 
