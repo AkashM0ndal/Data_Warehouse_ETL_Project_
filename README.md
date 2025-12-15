@@ -15,7 +15,7 @@ The goal of this project is to:
 
 1. **Ingest** raw data into the database (Bronze layer).  
 2. **Clean, transform, and standardize** data (Silver layer).  
-3. **Model optimized tables for reporting and analysis** (Gold layer).
+3. **Model optimized tables for reporting and analysis** (Gold Layer).
 
 This architecture follows modern data engineering best practices, ensuring maintainability, traceability, and performance.
 
