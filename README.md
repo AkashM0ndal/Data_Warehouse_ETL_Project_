@@ -53,7 +53,7 @@ Examples:
 
 - Minimal transformations
 
-- Load timestamps
+- Load timestamps.
 
 - Source-of-truth for auditing
 
