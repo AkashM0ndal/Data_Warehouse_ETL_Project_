@@ -18,7 +18,7 @@ WARNINGS !! :
 
 
 
---create a store procedure to create tables in Bronze layer
+-- create a store procedure to create tables in Bronze layer
 CREATE OR ALTER PROCEDURE create_bronze AS
 BEGIN
 
@@ -118,7 +118,7 @@ PRINT '=======================================================================';
 
 
 
-
+-- drop the 06 no. Table which was created previously for more dynamic
 DROP TABLE bronze.erp_loc_a101;
 PRINT '=======================================================================';
 PRINT 'Deleted the 05 no. Table which was Created Previously for More Dynamic';
@@ -136,7 +136,7 @@ PRINT 'Successfully Created 05 Table out of 06 Tables..';
 PRINT '=======================================================================';
 
 
--- drop the 06 no. table Created Previously
+-- drop the 07 no. table Created Previously
 DROP TABLE bronze.erp_px_cat_g1v2;
 PRINT '=======================================================================';
 PRINT 'Deleted the 06 no. Table which was Created Previously for More Dynamic';
@@ -156,6 +156,7 @@ PRINT 'Successfully Create 06 Table out of 06 Tables..';
 PRINT '================================================';
 
 END
+
 
 
 
