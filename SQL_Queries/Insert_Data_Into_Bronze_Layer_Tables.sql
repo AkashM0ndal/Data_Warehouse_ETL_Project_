@@ -1,3 +1,19 @@
+/*
+--- ** QUICK SUMMARY ** ---
+
+=============================================================================
+CREATE A STORE PROCEDURE TO LOAD THE NEW DATA FOR THE ETL PROCESS
+=============================================================================
+-> All the datasets are in the '.csv' file. This is more efficient way to insert the data into the SQL Server.
+
+Script Purpose: 
+			- delete the existing data in the tables and load the new data.
+			- create a store procedure to run the whole query very efficiently. 
+
+*/
+
+
+
 -- create a stored procedure for furthur help load data into Bronze layer Tables
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS 
 BEGIN
@@ -164,6 +180,7 @@ PRINT '=================================================';
 
 
 END 
+
 
 
 
