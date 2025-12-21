@@ -1,3 +1,12 @@
+/*
+SCRIPT 
+*/
+
+
+
+
+
+
 -- creating a stored procedure with the below query for futhur need
 CREATE OR ALTER PROCEDURE silver.load_silver AS 
 
@@ -304,6 +313,7 @@ BEGIN
 
 
 END
+
 
 
 -- ts 26.39.54
