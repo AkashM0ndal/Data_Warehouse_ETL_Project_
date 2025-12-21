@@ -1,5 +1,10 @@
 /*
-SCRIPT 
+SCRIPT PURPOSE: 
+		- Fix the data quality.
+		- Retriving and creating only the essential columns.
+		- Data Cleaning and validating.
+		- Create the new tables.
+		- Insert into the new values after cleaing, find essential data for Business KPIs.
 */
 
 
@@ -317,3 +322,4 @@ END
 
 
 -- ts 26.39.54
+
