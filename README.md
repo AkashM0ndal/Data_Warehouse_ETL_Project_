@@ -240,7 +240,10 @@ This ETL pipeline is built to demonstrate clean SQL engineering practices, and s
 - Professional project structure
 
 
-
+# ** Contact Informations**
+- Linkedin : https://www.linkedin.com/in/akash-m0ndal/
+- email : heyakashmondal.analyst@gmail.com
+- Contact No. : 9083666706
 
 
 
