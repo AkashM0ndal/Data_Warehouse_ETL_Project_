@@ -86,21 +86,19 @@ Cleaned, standardized, Optimizing, relational-modeled layer.
 
 - Uniform date/time formats
 
+- Validating the numeric columns
+
 ## **🥇 Gold Schema (gold)**
 
-Analytics-ready tables for BI and reporting for furthur analysis and .
+Analytics-ready tables(store procedure) for BI and reporting for furthur analysis.
 
 # Examples:
 
+- **`gold.dim_customers`**
+
+- **`gold.dim_products`**
+
 - **`gold.fact_sales`**
-
-- **`gold.fact_revenue_daily`**
-
-- **`gold.dim_customer`**
-
-- **`gold.dim_product`**
-
-- **`gold.dim_store`**
 
 ## Characteristics:
 
@@ -113,7 +111,7 @@ Analytics-ready tables for BI and reporting for furthur analysis and .
 
 ## **⚙️ ETL Logic (Stored Procedures + CTEs)**
 
-This project uses Stored Procedures to orchestrate ETL and CTEs to prepare consistent transformations.
+This project uses Stored Procedures to orchestrate ETL and CTEs to prepare consistent transformations and VIEWs for retrive only the for data privacy.
 
 ## Example Transformation Procedure
 ####
