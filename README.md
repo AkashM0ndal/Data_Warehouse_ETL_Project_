@@ -5,7 +5,7 @@ This repository contains a **SQL-based ETL pipeline** that processes raw data in
 - ✅ Handles **60,000+ records**
 - ✅ Works across **6+ relational tables**
 - ✅ Uses **Schemas, Stored Procedures, and CTEs**
-- ✅ Designed for **scalable analytics and reporting**
+- ✅ Designed for **scalable analytics and reporting*
 
 ---
 
