@@ -11,7 +11,7 @@ This repository contains a **SQL-based ETL pipeline** that processes raw data in
 ## 🚀 Project Overview
 
 
-AJFKLALDKFJALSKDJFLAKSJFSD
+AJFKLALDKFJALSKDJ
 
 The goal of this project is to:
 
