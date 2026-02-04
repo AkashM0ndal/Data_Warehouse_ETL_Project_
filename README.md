@@ -7,8 +7,6 @@ This repository contains a **SQL-based ETL pipeline** that processes raw data in
 - ✅ Designed for **scalable analytics and reporting**
 
 ## 🚀 Project Overview
-a
-
 The goal of this project is to:
 
 1. **Ingest** raw data into the database (Bronze layer).
