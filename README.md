@@ -14,7 +14,7 @@ The goal of this project is to:
 3. **Model optimized tables for reporting and analysis** (Gold Layer).
 
 This architecture follows modern data engineering best practices, ensuring maintainability, traceability, and performance
-
+mm
 ---
 
 ## 🏗️ Architecture: Bronze / Silver / Gold
