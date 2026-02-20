@@ -17,7 +17,7 @@ The goal of this project is to:
 
 This architecture follows modern data engineering best practices, ensuring maintainability, traceability, and performance
 
----
+-
 
 ## 🏗️ Architecture: Bronze / Silver / Gold
 
