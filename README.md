@@ -6,7 +6,7 @@ This repository contains a **SQL-based ETL pipeline** that processes raw data in
 - ✅ Uses **Schemas, Stored Procedures, and CTEs**
 - ✅ Designed for **scalable analytics and reporting**
 
-## 🚀 Project Overview;;;;
+## 🚀 Project Overview;;
 
 The goal of this project is to:
 
